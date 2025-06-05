@@ -1,0 +1,33 @@
+[
+  {
+    "role": "Internship",
+    "organisation": "Redtone Telecommunication",
+    "startDate": "Feb 2023",
+    "endDate": "May 2023",
+    "experiences": [
+      "Involved in the Worker Identification System (WIS) project",
+      "Resolved technical issues (e.g., certificate selection & backend logs)",
+      "Enhanced skills in full-stack development and teamwork"
+    ]
+  },
+  {
+    "role": "Freelance",
+    "organisation": "Graphic Designer & Data Entry",
+    "startDate": "2022",
+    "endDate": "2024",
+    "experiences": [
+      "Graphic Designer-Create Visual Designs. Design logo and marketing assets tailored to client needs.",
+      "Data Entry-Manage Client Projects.Communicate with clients, understand requirements, and deliver high quality designs on time"
+    ]
+  },
+  {
+    "role": "Crew Member",
+    "organisation": "Waffle & Ayam Gunting Politeknik Muadzam Shah",
+    "startDate": "2024",
+    "endDate": "Present",
+    "experiences": [
+      "Operated POS systems, handled payments, and prepared food",
+      "Developed customer service and multitasking skills"
+    ]
+  }
+]

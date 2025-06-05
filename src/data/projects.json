@@ -1,0 +1,26 @@
+[
+  {
+    "title": "Worker Identification System (WIS)",
+    "imageSrc": "projects/project.png",
+    "description": "Built an internal system with audit logs, email notifications, and file uploads using MinIO.",
+    "skills": ["Python", "MySQL", "JS", "Flask", "Docker", "HTML/CSS"],
+    "demo": "https://www.example.com",
+    "source": "https://www.github.com"
+  },
+  {
+    "title": "SMARTPTLI",
+    "imageSrc": "projects/project.png",
+    "description": "Student schedule viewer and parent portal for payments, progress, and events.",
+    "skills": ["PhP", "MySQL", "JS", "HTML/CSS"],
+    "demo": "https://www.example.com",
+    "source": "https://www.github.com"
+  },
+  {
+    "title": "Graphic Designer & Data Entry Assistant",
+    "imageSrc": "projects/project.png",
+    "description": "Designed logos and marketing materials for clients.Handled data entry tasks, organizing and managing client data with accuracy.",
+    "skills": ["Adobe", "Office", "Canva", "Figma"],
+    "demo": "https://www.example.com",
+    "source": "https://www.github.com"
+  }
+]
