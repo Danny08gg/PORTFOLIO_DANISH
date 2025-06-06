@@ -51,20 +51,34 @@
   background-size: 0 100%;
   background-repeat: no-repeat;
   transition: 0.4s;
+  background: #111; /* Match holographic card background */
+  position: relative;
+  overflow: hidden;
+  transition: all 0.5s ease; /* Combine with existing transition */
 }
 
 .aboutItem:hover {
   background-size: 100% 100%;
+  transform: scale(1.05); /* Add scale effect */
+  box-shadow: 0 0 20px rgba(0,255,255,0.5); /* Add glow effect */
+}
+
+.aboutItem:hover::before {
+  opacity: 1;
+  transform: rotate(-45deg) translateY(100%); /* Add holographic animation */
 }
 
 .aboutItem h3 {
-  font-size: 25px;
-  font-weight: 600;
+  color: #0ff; /* Match holographic text color */
+  font-size: 2rem; /* Match holographic text size */
+  position: relative;
+  z-index: 2; /* Ensure text stays above effect */
 }
 
 .aboutItem p {
   font-size: 25px;
 }
+
 
 @media screen and (max-width: 830px) {
   .container {
@@ -107,4 +121,9 @@
   .aboutItemText {
     text-align: center; /* Center-align text for better appearance */
   }
+
+  .aboutItem p {
+  font-size: 20px;
+}
+
 }
