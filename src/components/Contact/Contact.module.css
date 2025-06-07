@@ -24,33 +24,91 @@
   letter-spacing: 2px;
 }
 
-.links {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  list-style: none;
-  gap: 26px;
-}
-
-.link {
+.socialList {
   display: flex;
   align-items: center;
-  gap: 25px;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
-.link a {
-  color: var(--color-text);
-  text-decoration: none;
-  font-size: 30px;
-  font-weight: 400;
-  letter-spacing: 1.5px;
+.socialItem {
+  list-style: none;
+}
+
+.socialLink {
+  width: 80px;
+  height: 80px;
+  background-color: #fff;
+  text-align: center;
+  line-height: 80px;
+  font-size: 35px;
+  margin: 0 10px;
+  display: block;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+  border: 3px solid #fff;
+  z-index: 1;
+}
+
+.socialLink .icon {
+  position: relative;
+  color: #262626;
+  transition: 0.5s;
+  z-index: 3;
+}
+
+.socialLink:hover .icon {
+  color: #fff;
+  transform: rotateY(360deg);
+}
+
+.socialLink:before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: 0.5s;
+  z-index: 2;
+}
+
+.socialLink:hover:before {
+  top: 0;
+}
+
+.socialLink.facebook:before {
+  background: #3b5999;
+}
+
+.socialLink.twitter:before {
+  background: #55acee;
+}
+
+.socialLink.linkedin:before {
+  background: #0077b5;
+}
+
+.socialLink.email:before {
+  background: #d44638;
+}
+
+.socialLink.github:before {
+  background: #333;
+}
+
+.socialLink.whatsapp:before {
+  background: #25d366;
 }
 
 @media screen and (max-width: 830px) {
   .container {
     flex-direction: column;
     gap: 23px;
-    padding: 30px 5%; /* Reduce padding for mobile */
+    padding: 30px 5%;
   }
 
   .text {
@@ -60,26 +118,24 @@
   }
 
   .text h2 {
-    font-size: 40px; /* Reduced from 80px */
-    letter-spacing: 2px; /* Adjusted for proportionality */
+    font-size: 40px;
+    letter-spacing: 2px;
   }
 
   .text p {
-    font-size: 20px; /* Reduced from 40px */
-    letter-spacing: 1px; /* Adjusted for proportionality */
+    font-size: 20px;
+    letter-spacing: 1px;
   }
 
-  .links {
-    align-items: center;
+  .socialList {
+    gap: 15px;
   }
 
-  .link a {
-    font-size: 18px; /* Reduced from 30px */
-    letter-spacing: 1px; /* Adjusted for proportionality */
-  }
-
-  .link img {
-    width: 20px; /* Slightly reduce icon size for mobile */
-    height: auto;
+  .socialLink {
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    font-size: 24px;
+    margin: 0 5px;
   }
 }
