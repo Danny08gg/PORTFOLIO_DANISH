@@ -34,5 +34,9 @@
   {
     "title": "React",
     "imageSrc": "skills/react.png"
+  },
+  {
+    "title": "Bootstrap",
+    "imageSrc": "skills/Bootstrap.png"
   }
 ]

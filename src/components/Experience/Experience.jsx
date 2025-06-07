@@ -17,7 +17,11 @@ export const Experience = () => {
                   <img
                     src={getImageUrl(skill.imageSrc)}
                     alt={skill.title}
-                    className={skill.title === "JavaScript" ? styles.javaScriptImage : ""}
+                    className={
+                      skill.title === "JavaScript" || skill.title === "Bootstrap"
+                        ? styles.javaScriptImage
+                        : ""
+                    }
                   />
                 </div>
                 <p>{skill.title}</p>

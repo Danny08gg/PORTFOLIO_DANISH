@@ -24,10 +24,9 @@
 
 .skills {
   width: 45%;
-  display: flex;
-  flex-wrap: wrap;
-  grid-template-columns: repeat(3, 1fr); /* 3 lajur */
-  grid-template-rows: repeat(3, auto); /* 3 baris */
+  display: grid; /* Use grid instead of flex */
+  grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+  grid-template-rows: repeat(3, auto); /* 3 rows, auto height */
   gap: 37px;
 }
 
@@ -35,10 +34,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  grid-template-columns: repeat(3, 1fr); /* 3 lajur */
-  grid-template-rows: repeat(3, auto); /* 3 baris */
   gap: 11px;
-
 }
 
 .skillImageContainer {
@@ -56,8 +52,8 @@
 }
 
 .skillImageContainer img.javaScriptImage {
-  width: 170px; /* Besarkan saiz imej JavaScript */
-  height: 170px; /* Pastikan tinggi sepadan untuk mengekalkan nisbah */
+  width: 170px; /* Larger size for JavaScript image */
+  height: 170px;
 }
 
 .skill p {
@@ -119,20 +115,35 @@
 
   .skills {
     width: 100%;
-    grid-template-columns: repeat(3, 1fr); /* Kekal 3 lajur jika mahu, atau ubah ke 2 lajur */
-    flex-direction: row;
-    justify-content: center;
+    display: grid; /* Ensure grid layout */
+    grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+    grid-template-rows: repeat(3, auto); /* 3 rows, auto height */
+    gap: 20px; /* Reduced gap for mobile */
+    justify-items: center; /* Center items in each grid cell */
+  }
+
+  .skillImageContainer {
+    width: 100px; /* Smaller size for mobile */
+    height: 100px;
+  }
+
+  .skillImageContainer img {
+    width: 70px; /* Scale down images */
+  }
+
+  .skillImageContainer img.javaScriptImage {
+    width: 95px; /* Scale down JavaScript image */
+    height: 95px;
+  }
+
+  .skill p {
+    font-size: 18px; /* Smaller font size for mobile */
   }
 
   .title {
-  color: var(--color-text);
-  font-size: 35px;
-  font-weight: 700;
-  letter-spacing: 1.75px;
-  text-transform: uppercase;
-  text-align: center;
-}
-
+    font-size: 28px; /* Slightly smaller title for mobile */
+    text-align: center;
+  }
 
   .history {
     width: 100%;
