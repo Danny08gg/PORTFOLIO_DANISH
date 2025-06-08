@@ -23,7 +23,7 @@
 }
 
 .skills {
-  width: 45%;
+  width: 40%;
   display: grid; /* Use grid instead of flex */
   grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
   grid-template-rows: repeat(3, auto); /* 3 rows, auto height */
@@ -116,7 +116,7 @@
   .skills {
     width: 100%;
     display: grid; /* Ensure grid layout */
-    grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+    grid-template-columns: repeat(3, auto); /* 3 equal columns */
     grid-template-rows: repeat(3, auto); /* 3 rows, auto height */
     gap: 20px; /* Reduced gap for mobile */
     justify-items: center; /* Center items in each grid cell */

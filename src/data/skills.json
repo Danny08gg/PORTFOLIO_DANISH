@@ -36,6 +36,10 @@
     "imageSrc": "skills/react.png"
   },
   {
+    "title": "PHP",
+    "imageSrc": "skills/PHP.png"
+  },
+  {
     "title": "Bootstrap",
     "imageSrc": "skills/Bootstrap.png"
   }

@@ -55,7 +55,7 @@
 
 .socialLink .icon {
   position: relative;
-  color: #262626;
+  color: var(--color-secondary);
   transition: 0.5s;
   z-index: 3;
 }
